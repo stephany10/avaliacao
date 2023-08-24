@@ -1,17 +1,43 @@
-.Imagem{
-    width: 80px!important;
-    height: 60px!important;
+@media screen and (max-width: 1024px){    
+    .Imagem{
+        width: 150px!important;
+        height: 130px!important;
+    }
+    .div-todasimagens{
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        text-align: center;
+        margin-top: 120px;
+        position: inherit;
+    }
+    .titulo{
+        font-size: 20px;
+        font-family: 'Bebas Neue';
+        color: rgb(146, 83, 204);
+        margin-bottom: 7px;
+        text-align: center;
+    }
 }
-.div-todasimagens{
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    text-align: center;
-    margin-top: 25px;
-    position: inherit;
-}
-.titulo{
-    font-size: 10px;
-    color: rgb(146, 83, 204);
-    margin-bottom: 7px;
-    text-align: center;
+
+@media screen and (min-width: 1024px){  
+    .Imagem{
+        width: 200px!important;
+        height: 160px!important;
+    }
+    .div-todasimagens{
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        text-align: center;
+        margin-top: 25px;
+        position: inherit;
+    }
+    .titulo{
+        font-size: 20px;
+        font-family: 'Kanit', sans-serif;
+        color: rgb(247, 241, 241);
+        margin-bottom: 7px;
+        text-align: center;
+    }
+
+
 }

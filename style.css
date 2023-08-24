@@ -1,13 +1,36 @@
 @import url(styles/header.css);
 @import url(styles/grid.css);
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 :root{
     --cor-de-fundo: #e5e5e5;
+    --cor-de-fundo-min: #9e9e9e;
     --branco: #FFFFFF;
     --amarelo:  #FECD2F;
-    --roxo-degrade: 
-    linear-gradient(94.49deg,  #733887 35.48%,  #C75EEB 143.32%);
-
+    --roxo-degrade: linear-gradient(94.49deg,  #733887 35.48%,  #C75EEB 143.32%);
+    --roxo: #ea00ff;
 }
-body{
-    background-color: var(--cor-de-fundo);
+@media screen and (min-width: 1024px){
+    .fixed {
+        background: #f1e7e7;
+        height: 50px;
+        width: 100px;
+        position: fixed;
+        bottom: 20px;
+        right: 40px;
+        
+        font-family: 'Bebas Neue';
+    
+    
+    }
+}
+
+@media screen and (max-width: 1024px){
+    footer {
+        position: fixed;
+        margin-top: 100px;
+        margin-left: 640px;
+        align-items: center;
+        display: none;
+      }
 }
